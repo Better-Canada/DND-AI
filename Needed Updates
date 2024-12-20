@@ -1,0 +1,28 @@
+Need to add the abillity to run test for easier testing
+need to fix error with the training{
+Episode: 0
+Success rate: 0.0
+Traceback (most recent call last):
+  File "C:\Users\isaia\Desktop\code\RL-Chatbot-master\DialogueManager.py", line 176, in <module>
+    dm = DialogueManager(window)
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isaia\Desktop\code\RL-Chatbot-master\DialogueManager.py", line 27, in __init__
+    self.Run()
+  File "C:\Users\isaia\Desktop\code\RL-Chatbot-master\DialogueManager.py", line 45, in Run
+    self.Train()
+  File "C:\Users\isaia\Desktop\code\RL-Chatbot-master\DialogueManager.py", line 62, in Train
+    result = self.Step()
+             ^^^^^^^^^^^
+  File "C:\Users\isaia\Desktop\code\RL-Chatbot-master\DialogueManager.py", line 105, in Step
+    nextStateRepresentation = self.stateTracker.GetStateRepresentation()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isaia\Desktop\code\RL-Chatbot-master\StateTracker.py", line 73, in GetStateRepresentation
+    agentRequestRepresentation[self.slotsDictionary[lastAgentAction['requestSlots']]] = 1.0
+                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'category'
+}
+need to fix the tkinter chatbox
+need to add a training gui
+need to improve the timeplexity of the training 
+need to increase the batch size of the training
+need to add some simple debugging statements for initial testings
